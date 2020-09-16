@@ -26,7 +26,7 @@ def demo(num):
 
 def can_play(fn):
     def inner(x, y, **kwargs):
-        clock = kwargs.get('clock',23)
+        clock = kwargs.get('clock', 23)
         if clock < 18:
             fn(x, y)
         else:
